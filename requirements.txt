@@ -1,0 +1,4 @@
+hikari>=2.0.0.dev103
+hikari-lightbulb>=1.5.1
+python-dotenv>=0.19.1
+uvloop>=0.16.0; os_name != "nt"
