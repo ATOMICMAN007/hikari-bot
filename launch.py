@@ -1,5 +1,6 @@
 import os
-from lib.bot import Bot
+
+from theBot.bot import Bot
 
 if os.name != "nt":
     import uvloop

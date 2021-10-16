@@ -22,11 +22,11 @@ class Bot(lightbulb.Bot):
             intents=hikari.Intents.ALL,
         )
 
-    # def load_extensions_from(self):
-    #     super().load_extensions_from(pathlib.Path("./plugs"))
-
     def run(self):
-        super().load_extensions_from(pathlib.Path("./lib/plugs"))
+        super().load_extensions_from(path=pathlib.Path("theBot/plugs/"))
         super().run(
             activity=hikari.Activity(name="with mud.", type=hikari.ActivityType.PLAYING)
         )
+
+    # TODO extensions are not loading, CommandNotFound error is raised on
+    # command, `..ping`
